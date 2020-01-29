@@ -16,16 +16,17 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         if (!isDead)
-        { 
-        BroadcastMessage("OnDamageTaken");
-
-        hitPoints -= damage;
-        if (hitPoints <= 0)
         {
-            isDead = true;
-            GetComponent<Animator>().SetTrigger("Dead");
+            hitPoints -= damage;
+            if (hitPoints <= 0)
+            {
+                isDead = true;
+                GetComponent<Animator>().SetTrigger("Dead");
+                return;
+            }
+            BroadcastMessage("OnDamageTaken");
+            GetComponent<Animator>().SetTrigger("Hit");
         }
-    }
     }
 
 }
