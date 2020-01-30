@@ -58,6 +58,7 @@ MonoBehaviour:
   fireDelay: 1
   ammoSlot: {fileID: 0}
   ammoType: 2
+  fireSound: {fileID: 8300000, guid: 1df1429981f76644097c7fd47fc5f239, type: 3}
 --- !u!82 &2476292032818379979
 AudioSource:
   m_ObjectHideFlags: 0

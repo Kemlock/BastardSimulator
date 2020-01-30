@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   detectionRange: 10
-  attackRange: 0.5
+  attackRange: 2.5
   turnSpeed: 5
 --- !u!114 &638850132
 MonoBehaviour:

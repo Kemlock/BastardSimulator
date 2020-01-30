@@ -14,6 +14,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float fireDelay = 1f;
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
+    [SerializeField] AudioClip fireSound;
 
     AudioSource gunFireAudioSource;
     bool canShoot = true;
@@ -54,7 +55,7 @@ public class Weapon : MonoBehaviour
 
     private void PlayGunFireAudio()
     {
-        gunFireAudioSource.Play();
+        gunFireAudioSource.PlayOneShot(fireSound);
     }
 
     private void ProcessRayCast()
