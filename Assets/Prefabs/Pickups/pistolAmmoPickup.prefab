@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8812665653888401146}
   - component: {fileID: 8372711051416056351}
-  - component: {fileID: 8372711051416056348}
+  - component: {fileID: 8090822953843138693}
   m_Layer: 0
   m_Name: pistolAmmoPickup
   m_TagString: Untagged
@@ -48,9 +48,9 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.24
+  m_Radius: 0.39
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8372711051416056348
+--- !u!114 &8090822953843138693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,7 +63,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoType: 0
-  ammoAmmount: 12
+  ammoAmmount: 20
+  audioClip: {fileID: 8300000, guid: eb5685b26a6494994af389a3293064e8, type: 3}
 --- !u!1001 &428471950186389592
 PrefabInstance:
   m_ObjectHideFlags: 0

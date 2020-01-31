@@ -8,7 +8,6 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] float detectionRange = 15f;
-    [SerializeField] float attackRange = 0.5f;
     [SerializeField] float turnSpeed = 5f;
 
     EnemyHealth enemyHealth;

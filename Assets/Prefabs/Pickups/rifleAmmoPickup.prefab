@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8812665653888401146}
   - component: {fileID: 8372711051416056351}
   - component: {fileID: 8372711051416056348}
-  - component: {fileID: 5381339468770359165}
   m_Layer: 0
   m_Name: rifleAmmoPickup
   m_TagString: Untagged
@@ -65,44 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoType: 1
   ammoAmmount: 50
---- !u!108 &5381339468770359165
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8845044767481823953}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 2
-  m_Color: {r: 0.8962264, g: 0.30860624, b: 0.30860624, a: 1}
-  m_Intensity: 0.3
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
+  audioClip: {fileID: 8300000, guid: e1d79f4a0c7873742babc5f6e9ff800e, type: 3}
 --- !u!1001 &428471950186389592
 PrefabInstance:
   m_ObjectHideFlags: 0
