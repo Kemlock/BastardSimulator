@@ -317,6 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  damageCanvas: {fileID: 0}
 --- !u!114 &1181537500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +362,7 @@ GameObject:
   - component: {fileID: 1515567330}
   - component: {fileID: 1515567329}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Torch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -391,7 +392,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 0.9811321, g: 0.9210652, b: 0.09718761, a: 1}
+  m_Color: {r: 1, g: 0.97515726, b: 0.6273585, a: 1}
   m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 70
@@ -431,8 +432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bf8b4b7478a5564c94f0c06bb520d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rateOfLightDecay: 1
-  rateOfAngleDecay: 1
+  rateOfLightDecay: 0.2
+  rateOfAngleDecay: 0.2
   minAngle: 40
   maxAngle: 70
   fullCharge: 10

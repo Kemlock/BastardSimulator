@@ -22,6 +22,19 @@ public class TorchSystem : MonoBehaviour
     {
         DecreaseLightAngle();
         DecreaseLightIntensity();
+
+        bool isFlicker = UnityEngine.Random.Range(1, 4) == 1;
+        if(torch.intensity < 4f && isFlicker)
+        {
+            StartCoroutine(Flicker());
+        }
+    }
+
+    IEnumerator Flicker()
+    {
+        torch.enabled = false;
+        yield return new WaitForSeconds(0.5f);
+        torch.enabled = true;
     }
 
     public void Recharge(float charge)
